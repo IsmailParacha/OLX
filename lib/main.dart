@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medicalapp/slider.dart';
 import './myhome.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: myHome(),
+      home: slider(),
     );
   }
 }

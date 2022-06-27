@@ -1,7 +1,6 @@
-// ignore_for_file: camel_case_types
-
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class myHome extends StatefulWidget {
   const myHome({Key? key}) : super(key: key);
@@ -10,6 +9,7 @@ class myHome extends StatefulWidget {
 }
 
 class _myHomeState extends State<myHome> {
+  CarouselController buttonCarouselController = CarouselController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
