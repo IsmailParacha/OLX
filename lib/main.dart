@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medicalapp/screen/login.dart';
+import 'package:medicalapp/screen/signup.dart';
 import 'package:medicalapp/slider.dart';
 
 void main() {
@@ -13,10 +14,11 @@ class home extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/login',
+      // initialRoute: '/login',
       routes: {
         '/login': (context) => login(),
         '/home': (context) => slider(),
+        '/signup': (context) => signup(),
       },
       home: login(),
     );

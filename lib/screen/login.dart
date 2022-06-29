@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:lottie/lottie.dart';
 // import 'package:lottie/lottie.dart';
 
 class login extends StatefulWidget {
@@ -12,9 +13,11 @@ class login extends StatefulWidget {
 
 class _loginState extends State<login> {
   bool _isObscure = true;
+  bool value = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -26,6 +29,8 @@ class _loginState extends State<login> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  Lottie.network(
+                      'https://assets9.lottiefiles.com/packages/lf20_dehufm3f.json'),
                   Text(
                     "Welcome Back!",
                     style:
@@ -36,11 +41,11 @@ class _loginState extends State<login> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(15.0),
             child: Container(
               child: TextField(
                 decoration: InputDecoration(
-                    hintText: "Email", suffixIcon: Icon(Icons.one_k)
+                    hintText: "Email", suffixIcon: Icon(Icons.done)
 
                     //labelText: "User name",
                     ),
@@ -66,6 +71,31 @@ class _loginState extends State<login> {
                   ),
                 ),
               ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Row(
+              children: [
+                Container(
+                    child: Checkbox(
+                        value: this.value,
+                        onChanged: (bool) {
+                          setState(() {
+                            this.value = !value;
+                          });
+                        })),
+                Text("I agree to "),
+                Text(
+                  " Privacy Policy",
+                  style: TextStyle(color: Colors.blue),
+                ),
+                Text(" and "),
+                Text(
+                  " Term and Condition ",
+                  style: TextStyle(color: Colors.blue),
+                )
+              ],
             ),
           ),
           Container(
@@ -127,12 +157,9 @@ class _loginState extends State<login> {
                               size: 35.0,
                             ),
                           ),
-                          Text(
-                            "Facebook",
-                            style:
-                                TextStyle(fontSize: 20.0, color: Colors.white),
-                            textAlign: TextAlign.center,
-                          ),
+                          Text("Facebook",
+                              style: TextStyle(
+                                  fontSize: 20.0, color: Colors.white)),
                         ],
                       )),
                   decoration: BoxDecoration(
@@ -181,9 +208,12 @@ class _loginState extends State<login> {
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
             Text("Don't have an account?"),
-            Text(
-              " Sign up",
-              style: TextStyle(color: Colors.blue),
+            InkWell(
+              onTap: () => {Navigator.pushNamed(context, '/signup')},
+              child: Text(
+                " Sign up",
+                style: TextStyle(color: Colors.blue),
+              ),
             )
           ])
         ],
