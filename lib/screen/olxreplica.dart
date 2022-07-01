@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:medicalapp/widget/FeaturedProduct.dart';
 import 'package:medicalapp/widget/catagorycard.dart';
 
 class mainpage extends StatefulWidget {
@@ -65,8 +66,7 @@ class _mainpageState extends State<mainpage> {
         body: Column(
           children: <Widget>[
             Container(
-              color: Color.fromARGB(255, 247, 244, 244),
-              child: TextField(
+              child: const TextField(
                 decoration: InputDecoration(
                     labelText: "Search location",
                     prefixIcon: Icon(Icons.location_on_outlined),
@@ -75,6 +75,8 @@ class _mainpageState extends State<mainpage> {
               ),
             ),
             Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
               color: Color.fromARGB(255, 247, 244, 244),
               child: TextField(
                 decoration: InputDecoration(
@@ -161,7 +163,7 @@ class _mainpageState extends State<mainpage> {
                       "Pets"),
                 ],
               ),
-            )
+            ),
           ],
         ));
   }
