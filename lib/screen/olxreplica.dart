@@ -66,6 +66,7 @@ class _mainpageState extends State<mainpage> {
         body: Column(
           children: <Widget>[
             Container(
+              color: Color.fromARGB(255, 247, 244, 244),
               child: const TextField(
                 decoration: InputDecoration(
                     labelText: "Search location",
@@ -75,8 +76,6 @@ class _mainpageState extends State<mainpage> {
               ),
             ),
             Container(
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
               color: Color.fromARGB(255, 247, 244, 244),
               child: TextField(
                 decoration: InputDecoration(

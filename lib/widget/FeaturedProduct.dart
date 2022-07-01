@@ -21,7 +21,6 @@ class _featuredProductState extends State<featuredProduct> {
             image: AssetImage('assets/image/car.jpg'),
             fit: BoxFit.fill,
           ),
-          shape: BoxShape.circle,
         ),
       )
     ]);
