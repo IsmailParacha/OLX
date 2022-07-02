@@ -11,87 +11,190 @@ class featuredproduct extends StatelessWidget {
       body: ListView(
         scrollDirection: Axis.vertical,
         children: [
-          Card(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Image.asset(
-                  "assets/image/1.jpg",
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
                   width: 180,
-                  height: 180,
-                  fit: BoxFit.fill,
-                ),
-
-                //house title
-                Container(
-                  decoration: BoxDecoration(
-                      border: Border(
-                          left: BorderSide(width: 10.0, color: Colors.yellow))),
-                  child: Column(
+                  height: 220,
+                  child: Card(
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              "Portion for rent",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18.0),
-                            ),
-                            Icon(Icons.favorite_outline)
-                          ],
-                        ),
-                        Text(
-                          "RS 50,000",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18.0),
+                        Image.asset(
+                          "assets/image/1.jpg",
+                          fit: BoxFit.fill,
                         ),
 
-                        //House properties
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            //BATHROOM DETAIL
-                            Container(
-                              child: Row(
-                                children: [
-                                  Icon(Icons.bathroom_outlined),
-                                  Text(" 3")
-                                ],
-                              ),
-                            ),
-                            //ROM DETAIL
-                            Container(
-                              child: Row(
-                                children: [
-                                  Icon(Icons.bed_outlined),
-                                  Text(" 4")
-                                ],
-                              ),
-                            ),
-                            //HOUSE SPACE DETAIL
-                            Container(
-                              child: Row(
-                                children: [
-                                  Icon(Icons.square_foot_outlined),
-                                  Text("240yard")
-                                ],
-                              ),
-                            ),
-                          ],
+                        //house title
+                        Container(
+                          decoration: BoxDecoration(
+                              border: Border(
+                                  left: BorderSide(
+                                      width: 10.0,
+                                      color:
+                                          Color.fromARGB(255, 220, 202, 37)))),
+                          child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Portion for rent",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16.0),
+                                    ),
+                                    Icon(Icons.favorite_outline)
+                                  ],
+                                ),
+                                Text(
+                                  "RS 50,000",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18.0),
+                                ),
+
+                                //House properties
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    //BATHROOM DETAIL
+                                    Container(
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.bathroom_outlined),
+                                          Text(" 3")
+                                        ],
+                                      ),
+                                    ),
+                                    //ROM DETAIL
+                                    Container(
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.bed_outlined),
+                                          Text(" 4")
+                                        ],
+                                      ),
+                                    ),
+                                    //HOUSE SPACE DETAIL
+                                    Container(
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.square_foot_outlined),
+                                          Text("240yard")
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+
+                                Text(" SCHEME 33, KARACHI"),
+                              ]),
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(" SCHEME 33, KARACHI"),
-                            Text(" 01 JUL")
-                          ],
-                        )
-                      ]),
+                      ],
+                    ),
+                  ),
                 ),
-              ],
-            ),
-          ),
+              ),
+
+              //(2 Product)
+
+              // Padding(
+              //   padding: const EdgeInsets.all(8.0),
+              //   child: Container(
+              //     width: 180,
+              //     height: 220,
+              //     child: Card(
+              //       child: Column(
+              //         crossAxisAlignment: CrossAxisAlignment.start,
+              //         children: [
+              //           Image.asset(
+              //             "assets/image/1.jpg",
+              //             fit: BoxFit.fill,
+              //           ),
+
+              //           //house title
+              //           Container(
+              //             decoration: BoxDecoration(
+              //                 border: Border(
+              //                     left: BorderSide(
+              //                         width: 10.0,
+              //                         color:
+              //                             Color.fromARGB(255, 220, 202, 37)))),
+              //             child: Column(
+              //                 crossAxisAlignment: CrossAxisAlignment.start,
+              //                 children: [
+              //                   Row(
+              //                     mainAxisAlignment:
+              //                         MainAxisAlignment.spaceBetween,
+              //                     children: [
+              //                       Text(
+              //                         "Portion for rent",
+              //                         style: TextStyle(
+              //                             fontWeight: FontWeight.bold,
+              //                             fontSize: 16.0),
+              //                       ),
+              //                       Icon(Icons.favorite_outline)
+              //                     ],
+              //                   ),
+              //                   Text(
+              //                     "RS 50,000",
+              //                     style: TextStyle(
+              //                         fontWeight: FontWeight.bold,
+              //                         fontSize: 18.0),
+              //                   ),
+
+              //                   //House properties
+              //                   Row(
+              //                     mainAxisAlignment:
+              //                         MainAxisAlignment.spaceBetween,
+              //                     children: [
+              //                       //BATHROOM DETAIL
+              //                       Container(
+              //                         child: Row(
+              //                           children: [
+              //                             Icon(Icons.bathroom_outlined),
+              //                             Text(" 3")
+              //                           ],
+              //                         ),
+              //                       ),
+              //                       //ROM DETAIL
+              //                       Container(
+              //                         child: Row(
+              //                           children: [
+              //                             Icon(Icons.bed_outlined),
+              //                             Text(" 4")
+              //                           ],
+              //                         ),
+              //                       ),
+              //                       //HOUSE SPACE DETAIL
+              //                       Container(
+              //                         child: Row(
+              //                           children: [
+              //                             Icon(Icons.square_foot_outlined),
+              //                             Text("240yard")
+              //                           ],
+              //                         ),
+              //                       ),
+              //                     ],
+              //                   ),
+
+              //                   Text(" SCHEME 33, KARACHI"),
+              //                 ]),
+              //           ),
+              //         ],
+              //       ),
+              //     ),
+              //   ),
+              // ),
+            ],
+          )
         ],
       ),
     );

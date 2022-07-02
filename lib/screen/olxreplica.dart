@@ -163,20 +163,6 @@ class _mainpageState extends State<mainpage> {
                 ],
               ),
             ),
-            // Padding(
-            //   padding: const EdgeInsets.all(10.0),
-            //   child: Container(
-            //     color: Color.fromARGB(255, 247, 244, 244),
-            //     child: Column(
-            //       children: [
-            //         Row(
-            //           children: [featuredproduct(), featuredproduct()],
-            //         ),
-
-            //       ],
-            //     ),
-            //   ),
-            // )
           ],
         ));
   }
