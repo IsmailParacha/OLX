@@ -3,6 +3,7 @@ import 'package:medicalapp/screen/login.dart';
 import 'package:medicalapp/screen/olxreplica.dart';
 import 'package:medicalapp/screen/signup.dart';
 import 'package:medicalapp/slider.dart';
+import 'package:medicalapp/widget/FeaturedProduct.dart';
 
 void main() {
   runApp(home());

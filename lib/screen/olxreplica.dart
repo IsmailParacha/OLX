@@ -75,14 +75,16 @@ class _mainpageState extends State<mainpage> {
                     suffixIcon: Icon(Icons.arrow_downward_outlined)),
               ),
             ),
-            Container(
-              color: Color.fromARGB(255, 247, 244, 244),
-              child: TextField(
-                decoration: InputDecoration(
-                    labelText: "Find Cars, Mobile Phones and more",
-                    prefixIcon: Icon(Icons.search),
-                    border: InputBorder.none,
-                    suffixIcon: Icon(Icons.notification_add_outlined)),
+            Expanded(
+              child: Container(
+                color: Color.fromARGB(255, 247, 244, 244),
+                child: TextField(
+                  decoration: InputDecoration(
+                      labelText: "Find Cars, Mobile Phones and more",
+                      prefixIcon: Icon(Icons.search),
+                      border: InputBorder.none,
+                      suffixIcon: Icon(Icons.notification_add_outlined)),
+                ),
               ),
             ),
             Padding(
@@ -108,7 +110,7 @@ class _mainpageState extends State<mainpage> {
               ),
             ),
             Container(
-              height: 200,
+              height: 150,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -163,8 +165,24 @@ class _mainpageState extends State<mainpage> {
                 ],
               ),
             ),
-            Row(
-              children: [],
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Container(
+                color: Color.fromARGB(255, 247, 244, 244),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [featuredproduct(), featuredproduct()],
+                    ),
+                    Row(
+                      children: [featuredproduct(), featuredproduct()],
+                    ),
+                    Row(
+                      children: [featuredproduct(), featuredproduct()],
+                    ),
+                  ],
+                ),
+              ),
             )
           ],
         ));
