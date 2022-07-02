@@ -85,7 +85,6 @@ class _mainpageState extends State<mainpage> {
                     suffixIcon: Icon(Icons.notification_add_outlined)),
               ),
             ),
-
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
@@ -173,12 +172,7 @@ class _mainpageState extends State<mainpage> {
             //         Row(
             //           children: [featuredproduct(), featuredproduct()],
             //         ),
-            //         Row(
-            //           children: [featuredproduct(), featuredproduct()],
-            //         ),
-            //         Row(
-            //           children: [featuredproduct(), featuredproduct()],
-            //         ),
+
             //       ],
             //     ),
             //   ),
