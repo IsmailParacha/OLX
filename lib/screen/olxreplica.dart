@@ -63,7 +63,8 @@ class _mainpageState extends State<mainpage> {
             ],
           ),
         ),
-        body: Column(
+        body: ListView(
+          shrinkWrap: true,
           children: <Widget>[
             Container(
               color: Color.fromARGB(255, 247, 244, 244),
@@ -108,7 +109,7 @@ class _mainpageState extends State<mainpage> {
               ),
             ),
             Container(
-              height: 150,
+              height: 120,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -163,6 +164,30 @@ class _mainpageState extends State<mainpage> {
                 ],
               ),
             ),
+            Row(
+              children: [
+                Expanded(child: featuredproduct()),
+                Expanded(child: featuredproduct()),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(child: featuredproduct()),
+                Expanded(child: featuredproduct()),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(child: featuredproduct()),
+                Expanded(child: featuredproduct()),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(child: featuredproduct()),
+                Expanded(child: featuredproduct()),
+              ],
+            )
           ],
         ));
   }
