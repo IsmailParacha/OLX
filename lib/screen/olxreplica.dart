@@ -3,6 +3,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:medicalapp/widget/FeaturedProduct.dart';
 import 'package:medicalapp/widget/catagorycard.dart';
+import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 
 class mainpage extends StatefulWidget {
   const mainpage({Key? key}) : super(key: key);
@@ -12,9 +13,30 @@ class mainpage extends StatefulWidget {
 }
 
 class _mainpageState extends State<mainpage> {
+  // int _selectedIndex = 0;
+  // void _onItemTap(int index) {
+  //   setState(() {
+  //     _selectedIndex = index;
+  //   });
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        bottomNavigationBar: ConvexAppBar(
+          backgroundColor: Colors.indigo,
+          activeColor: Colors.white,
+          color: Colors.grey,
+          items: [
+            TabItem(icon: Icons.home, title: 'HOME'),
+            TabItem(icon: Icons.chat, title: 'CHATS'),
+            TabItem(icon: Icons.add, title: 'SELL'),
+            TabItem(icon: Icons.favorite_outline, title: 'MY ADS'),
+            TabItem(icon: Icons.person, title: 'ACCOUNT'),
+          ],
+          initialActiveIndex: 2, //optional, default as 0
+          onTap: (int i) => print('click index=$i'),
+        ),
         appBar: AppBar(
           title: Row(
             children: [
