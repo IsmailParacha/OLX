@@ -14,7 +14,8 @@ class _productPageState extends State<productPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.transparent.withOpacity(0.1),
+          backgroundColor: Colors.indigo,
+          elevation: 5.0,
           actions: <Widget>[
             Icon(Icons.share),
           ]),
@@ -40,6 +41,8 @@ class _productPageState extends State<productPage> {
                       onPressed: () {},
                       child: Text("featured"),
                       color: Color.fromARGB(255, 237, 207, 39),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0)),
                     )
                   ]),
                 ),
@@ -171,10 +174,12 @@ class _productPageState extends State<productPage> {
                 Container(
                   width: MediaQuery.of(context).size.width * 0.810,
                   height: MediaQuery.of(context).size.height * 0.180,
-                  color: Colors.greenAccent,
+                  color: Colors.indigo,
                   child: Text(
                     "GOOGLE MAP",
-                    style: TextStyle(color: Colors.grey.withOpacity(1.0)),
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(1.0),
+                    ),
                     textAlign: TextAlign.center,
                   ),
                 )

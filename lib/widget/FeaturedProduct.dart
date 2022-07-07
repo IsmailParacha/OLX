@@ -10,11 +10,11 @@ class featuredproduct extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: InkWell(
-        onTap: () => productPage(),
-        child: Container(
-          width: 180,
-          height: 220,
+      child: Container(
+        width: 180,
+        height: 220,
+        child: InkWell(
+          onTap: () => Navigator.pushNamed(context, '/productpage'),
           child: Card(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

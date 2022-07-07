@@ -23,6 +23,7 @@ class home extends StatelessWidget {
         '/login': (context) => login(),
         '/home': (context) => slider(),
         '/signup': (context) => signup(),
+        '/productpage': (context) => productPage(),
       },
       home: mainpage(),
     );
