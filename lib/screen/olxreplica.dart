@@ -5,6 +5,8 @@ import 'package:medicalapp/widget/FeaturedProduct.dart';
 import 'package:medicalapp/widget/catagorycard.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 
+import '../widget/simpleProduct.dart';
+
 class mainpage extends StatefulWidget {
   const mainpage({Key? key}) : super(key: key);
 
@@ -35,7 +37,7 @@ class _mainpageState extends State<mainpage> {
             TabItem(icon: Icons.person, title: 'ACCOUNT'),
           ],
           initialActiveIndex: 2, //optional, default as 0
-          onTap: (int i) => print('click index=$i'),
+          onTap: (int i) => print('Bottom navigation  index=$i'),
         ),
         appBar: AppBar(
           title: Row(
@@ -189,24 +191,24 @@ class _mainpageState extends State<mainpage> {
             Row(
               children: [
                 Expanded(child: featuredproduct()),
-                Expanded(child: featuredproduct()),
+                Expanded(child: simpleProduct()),
               ],
             ),
             Row(
               children: [
                 Expanded(child: featuredproduct()),
-                Expanded(child: featuredproduct()),
+                Expanded(child: simpleProduct()),
               ],
             ),
             Row(
               children: [
-                Expanded(child: featuredproduct()),
-                Expanded(child: featuredproduct()),
+                Expanded(child: simpleProduct()),
+                Expanded(child: simpleProduct()),
               ],
             ),
             Row(
               children: [
-                Expanded(child: featuredproduct()),
+                Expanded(child: simpleProduct()),
                 Expanded(child: featuredproduct()),
               ],
             )
