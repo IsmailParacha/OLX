@@ -17,7 +17,7 @@ class simpleProduct extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.asset(
-                "assets/image/car.jpg",
+                "assets/image/3.jpg",
                 fit: BoxFit.fill,
               ),
 
@@ -30,7 +30,7 @@ class simpleProduct extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Car for Sell",
+                            "Flat for Sell",
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 16.0),
                           ),

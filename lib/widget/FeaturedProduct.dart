@@ -6,10 +6,12 @@ import 'package:medicalapp/screen/productpage.dart';
 class featuredproduct extends StatelessWidget {
   final String imagename;
   final String name;
+  final String price;
   // final Color color;
   featuredproduct(
     this.imagename,
     this.name,
+    this.price,
   );
 
   @override
@@ -43,16 +45,19 @@ class featuredproduct extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              '$name',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 16.0),
+                            Expanded(
+                              child: Text(
+                                '$name',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16.0),
+                              ),
                             ),
                             Icon(Icons.favorite_outline)
                           ],
                         ),
                         Text(
-                          "RS 50,000",
+                          "Rs $price",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18.0),
                         ),

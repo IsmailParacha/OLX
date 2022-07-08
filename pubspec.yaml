@@ -66,6 +66,7 @@ flutter:
     - assets/image/3.jpg
     - assets/image/pet.jpg
     - assets/image/house.jpg
+    - assets/image/commercail.jpg
     - assets/lottie/login.gif
     - assets/image/car.jpg
   #   - images/a_dot_ham.jpeg
