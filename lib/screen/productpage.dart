@@ -52,7 +52,10 @@ class _productPageState extends State<productPage> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
-            child: Text("Portion for rent"),
+            child: Text(
+              "Portion for rent",
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),

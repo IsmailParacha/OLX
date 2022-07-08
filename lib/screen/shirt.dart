@@ -24,7 +24,7 @@ class _shirtpageState extends State<shirtpage> {
           Container(
               width: MediaQuery.of(context).size.width,
               height: 240,
-              child: Image.asset('assets/image/cloth.jpg')),
+              child: Image.asset('assets/image/.jpg')),
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Row(
@@ -52,7 +52,10 @@ class _shirtpageState extends State<shirtpage> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
-            child: Text("Shirt for Sale"),
+            child: Text(
+              "Shirt for Sale",
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),

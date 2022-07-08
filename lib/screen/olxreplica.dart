@@ -46,6 +46,7 @@ class _mainpageState extends State<mainpage> {
           },
         ),
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           title: Row(
             children: [
               Text(

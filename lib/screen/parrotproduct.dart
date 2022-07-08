@@ -52,7 +52,10 @@ class _parrotpageState extends State<parrotpage> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
-            child: Text("Parrot for Sale"),
+            child: Text(
+              "Parrot for Sale",
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
