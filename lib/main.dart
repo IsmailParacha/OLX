@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medicalapp/screen/login.dart';
 import 'package:medicalapp/screen/olxreplica.dart';
+import 'package:medicalapp/screen/parrotproduct.dart';
 import 'package:medicalapp/screen/productpage.dart';
 import 'package:medicalapp/screen/signup.dart';
 import 'package:medicalapp/slider.dart';
@@ -24,6 +25,7 @@ class home extends StatelessWidget {
         '/home': (context) => slider(),
         '/signup': (context) => signup(),
         '/productpage': (context) => productPage(),
+        '/parrotpage': (context) => parrotpage(),
       },
       home: mainpage(),
     );

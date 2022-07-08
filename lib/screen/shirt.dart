@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class parrotpage extends StatefulWidget {
-  const parrotpage({Key? key}) : super(key: key);
+class shirtpage extends StatefulWidget {
+  const shirtpage({Key? key}) : super(key: key);
 
   @override
-  State<parrotpage> createState() => _parrotpageState();
+  State<shirtpage> createState() => _shirtpageState();
 }
 
-class _parrotpageState extends State<parrotpage> {
+class _shirtpageState extends State<shirtpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,7 @@ class _parrotpageState extends State<parrotpage> {
           Container(
               width: MediaQuery.of(context).size.width,
               height: 240,
-              child: Image.asset('assets/image/pet.jpg')),
+              child: Image.asset('assets/image/shirt.jpg')),
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Row(
@@ -33,17 +33,17 @@ class _parrotpageState extends State<parrotpage> {
                 Container(
                   child: Row(children: [
                     Text(
-                      "Rs 50000 ",
+                      "Rs 2,000 ",
                       style: TextStyle(
                           fontSize: 18.0, fontWeight: FontWeight.bold),
                     ),
-                    MaterialButton(
-                      onPressed: () {},
-                      child: Text("featured"),
-                      color: Color.fromARGB(255, 237, 207, 39),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0)),
-                    )
+                    // MaterialButton(
+                    //   onPressed: () {},
+                    //   child: Text("featured"),
+                    //   color: Color.fromARGB(255, 237, 207, 39),
+                    //   shape: RoundedRectangleBorder(
+                    //       borderRadius: BorderRadius.circular(10.0)),
+                    // )
                   ]),
                 ),
                 Icon(Icons.favorite_outline)
@@ -52,7 +52,7 @@ class _parrotpageState extends State<parrotpage> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
-            child: Text("Parrot for Sale"),
+            child: Text("Shirt for Sale"),
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
@@ -62,10 +62,10 @@ class _parrotpageState extends State<parrotpage> {
                 Container(
                   child: Row(children: [
                     Icon(Icons.location_on_outlined),
-                    Text("Gulshan-e-Kaneez Fatima ,Karachi")
+                    Text("Gulshan-e-Iqbal ,Karachi")
                   ]),
                 ),
-                Text("9/07/2022")
+                Text("08/07/2022")
               ],
             ),
           ),
@@ -87,7 +87,7 @@ class _parrotpageState extends State<parrotpage> {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [Text("Type"), Text("Australian")],
+              children: [Text("Type"), Text("Cotton")],
             ),
           ),
           Divider(
@@ -97,7 +97,7 @@ class _parrotpageState extends State<parrotpage> {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [Text("Age"), Text("1.5 Year")],
+              children: [Text("Color"), Text("Black,Brown,Blue")],
             ),
           ),
           Divider(
@@ -113,9 +113,9 @@ class _parrotpageState extends State<parrotpage> {
                   "Description",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0),
                 ),
-                Text("Australian Parrot"),
-                Text("Age : 1.5 year "),
-                Text("Color : white"),
+                Text("New Shirts for Sale"),
+                Text("Black,Brown ,Blue and multiple colors are availble"),
+                Text("Cotton type"),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [Text("See more")],
@@ -143,8 +143,8 @@ class _parrotpageState extends State<parrotpage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("User001"),
-                            Text("Member since Dec 2019"),
+                            Text("User"),
+                            Text("Member since Dec 2020"),
                             Text("SEE PROFILE")
                           ],
                         ),

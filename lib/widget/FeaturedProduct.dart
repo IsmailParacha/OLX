@@ -7,11 +7,13 @@ class featuredproduct extends StatelessWidget {
   final String imagename;
   final String name;
   final String price;
+  final String link;
   // final Color color;
   featuredproduct(
     this.imagename,
     this.name,
     this.price,
+    this.link,
   );
 
   @override
@@ -22,7 +24,7 @@ class featuredproduct extends StatelessWidget {
         width: 180,
         height: 220,
         child: InkWell(
-          onTap: () => Navigator.pushNamed(context, '/productpage'),
+          onTap: () => Navigator.pushNamed(context, '$link'),
           child: Card(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
