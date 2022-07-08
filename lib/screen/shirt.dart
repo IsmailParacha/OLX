@@ -24,7 +24,7 @@ class _shirtpageState extends State<shirtpage> {
           Container(
               width: MediaQuery.of(context).size.width,
               height: 240,
-              child: Image.asset('assets/image/.jpg')),
+              child: Image.asset('assets/image/cloth.jpg')),
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Row(

@@ -149,49 +149,57 @@ class _mainpageState extends State<mainpage> {
                         Icons.phone_android_outlined,
                         size: 40.0,
                       ),
-                      "Mobile"),
+                      "Mobile",
+                      Color.fromRGBO(237, 207, 39, 1)),
                   catagorycard(
                       Icon(
                         Icons.card_travel_outlined,
                         size: 40.0,
                       ),
-                      "Vehical"),
+                      "Vehical",
+                      Colors.indigo),
                   catagorycard(
                       Icon(
                         Icons.pets,
                         size: 40.0,
                       ),
-                      "Pets"),
+                      "Pets",
+                      Color.fromARGB(255, 150, 98, 79)),
                   catagorycard(
                       Icon(
                         Icons.cyclone_outlined,
                         size: 40.0,
                       ),
-                      "cyclone"),
+                      "cyclone",
+                      Color.fromARGB(255, 54, 244, 203)),
                   catagorycard(
                       Icon(
                         Icons.tv_off_outlined,
                         size: 40.0,
                       ),
-                      "Electronic"),
+                      "Electronic",
+                      Color.fromARGB(255, 54, 120, 244)),
                   catagorycard(
                       Icon(
                         Icons.phone_android_outlined,
                         size: 40.0,
                       ),
-                      "Mobile"),
+                      "Mobile",
+                      Colors.indigo),
                   catagorycard(
                       Icon(
                         Icons.card_travel_outlined,
                         size: 40.0,
                       ),
-                      "Vehical"),
+                      "Vehical",
+                      Color.fromRGBO(237, 207, 39, 1)),
                   catagorycard(
                       Icon(
                         Icons.pets,
                         size: 40.0,
                       ),
-                      "Pets"),
+                      "Pets",
+                      Color.fromARGB(255, 133, 89, 73)),
                 ],
               ),
             ),

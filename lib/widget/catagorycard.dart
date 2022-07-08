@@ -5,11 +5,13 @@ import 'package:flutter/src/widgets/framework.dart';
 
 class catagorycard extends StatelessWidget {
   final Icon icon;
+  final Color color;
   final String name;
   // final Color color;
   catagorycard(
     this.icon,
     this.name,
+    this.color,
   );
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class catagorycard extends StatelessWidget {
       child: Container(
         child: Column(children: [
           CircleAvatar(
-            backgroundColor: Color.fromARGB(255, 61, 221, 229),
+            backgroundColor: color,
             radius: 30.0,
             child: icon,
           ),

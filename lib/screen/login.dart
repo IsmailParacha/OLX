@@ -144,58 +144,54 @@ class _loginState extends State<login> {
                 child: Container(
                   width: MediaQuery.of(context).size.width * 0.410,
                   height: MediaQuery.of(context).size.height * 0.070,
-                  child: Padding(
-                      padding: const EdgeInsets.only(top: 10.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(left: 8.0, bottom: 8.0),
-                            child: Icon(
-                              Icons.facebook,
-                              color: Colors.white,
-                              size: 35.0,
-                            ),
-                          ),
-                          Text("Facebook",
-                              style: TextStyle(
-                                  fontSize: 20.0, color: Colors.white)),
-                        ],
-                      )),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding:
+                            EdgeInsets.only(top: 8.0, left: 8.0, bottom: 8.0),
+                        child: Icon(
+                          Icons.facebook,
+                          color: Colors.white,
+                          size: 35.0,
+                        ),
+                      ),
+                      Text("Facebook",
+                          style:
+                              TextStyle(fontSize: 20.0, color: Colors.white)),
+                    ],
+                  ),
                   decoration: BoxDecoration(
                     color: Colors.blueAccent,
-                    border:
-                        Border.all(color: Color.fromARGB(255, 36, 179, 110)),
+                    border: Border.all(color: Colors.blueAccent),
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
               ),
+
+              //gmail button
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Container(
                   width: MediaQuery.of(context).size.width * 0.410,
                   height: MediaQuery.of(context).size.height * 0.070,
-                  child: Padding(
-                      padding: const EdgeInsets.only(top: 10.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(left: 8.0, bottom: 8.0),
-                            child: Icon(
-                              Icons.whatsapp,
-                              color: Colors.white,
-                              size: 35.0,
-                            ),
-                          ),
-                          Text(
-                            "Whatsapp",
-                            style:
-                                TextStyle(fontSize: 20.0, color: Colors.white),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      )),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding:
+                            EdgeInsets.only(top: 8.0, left: 8.0, bottom: 8.0),
+                        child: Icon(
+                          Icons.mail_outline,
+                          color: Colors.white,
+                          size: 35.0,
+                        ),
+                      ),
+                      Text("Gmail",
+                          style:
+                              TextStyle(fontSize: 20.0, color: Colors.white)),
+                    ],
+                  ),
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 36, 179, 110),
                     border:

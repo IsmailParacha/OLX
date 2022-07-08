@@ -22,16 +22,39 @@ class featuredproduct extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Container(
         width: 180,
-        height: 220,
+        height: 218,
         child: InkWell(
           onTap: () => Navigator.pushNamed(context, '$link'),
           child: Card(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset(
-                  '$imagename',
-                  fit: BoxFit.fill,
+                Stack(
+                  children: [
+                    Image.asset(
+                      '$imagename',
+                      fit: BoxFit.fill,
+                    ),
+                    Positioned.fill(
+                        child: Align(
+                      alignment: Alignment.bottomLeft,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 4.0),
+                        child: MaterialButton(
+                          onPressed: () {},
+                          minWidth: 40.0,
+                          height: 30.0,
+                          child: Text(
+                            "FEATURED",
+                            style: TextStyle(fontSize: 11.0),
+                          ),
+                          color: Color.fromARGB(255, 237, 207, 39),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(4.0)),
+                        ),
+                      ),
+                    ))
+                  ],
                 ),
 
                 //house title
