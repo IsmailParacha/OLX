@@ -33,7 +33,7 @@ class _productPageState extends State<productPage> {
                 Container(
                   child: Row(children: [
                     Text(
-                      "Rs 51000 ",
+                      "Rs 50000 ",
                       style: TextStyle(
                           fontSize: 18.0, fontWeight: FontWeight.bold),
                     ),
@@ -52,7 +52,7 @@ class _productPageState extends State<productPage> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
-            child: Text("GTX 1650SUPER"),
+            child: Text("Portion for rent"),
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
@@ -87,7 +87,7 @@ class _productPageState extends State<productPage> {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [Text("Type"), Text("Computers")],
+              children: [Text("Type"), Text("Portion")],
             ),
           ),
           Divider(
@@ -113,8 +113,10 @@ class _productPageState extends State<productPage> {
                   "Description",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0),
                 ),
-                Text("GPU"),
-                Text("GTX 1650super"),
+                Text("4 Rooms"),
+                Text("3 Bathrooms"),
+                Text("2 Stores"),
+                Text("2nd floor"),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [Text("See more")],

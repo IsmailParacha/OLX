@@ -4,7 +4,13 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:medicalapp/screen/productpage.dart';
 
 class featuredproduct extends StatelessWidget {
-  const featuredproduct({Key? key}) : super(key: key);
+  final String imagename;
+  final String name;
+  // final Color color;
+  featuredproduct(
+    this.imagename,
+    this.name,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +26,7 @@ class featuredproduct extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.asset(
-                  "assets/image/1.jpg",
+                  '$imagename',
                   fit: BoxFit.fill,
                 ),
 
@@ -38,7 +44,7 @@ class featuredproduct extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "Portion for rent",
+                              '$name',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 16.0),
                             ),
