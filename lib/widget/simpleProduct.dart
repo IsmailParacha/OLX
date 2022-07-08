@@ -17,7 +17,7 @@ class simpleProduct extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.asset(
-                "assets/image/2.jpg",
+                "assets/image/car.jpg",
                 fit: BoxFit.fill,
               ),
 
