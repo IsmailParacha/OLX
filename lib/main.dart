@@ -3,6 +3,7 @@ import 'package:medicalapp/screen/login.dart';
 import 'package:medicalapp/screen/olxreplica.dart';
 import 'package:medicalapp/screen/parrotproduct.dart';
 import 'package:medicalapp/screen/productpage.dart';
+import 'package:medicalapp/screen/shirt.dart';
 import 'package:medicalapp/screen/signup.dart';
 import 'package:medicalapp/slider.dart';
 import 'package:medicalapp/widget/FeaturedProduct.dart';
@@ -22,10 +23,11 @@ class home extends StatelessWidget {
       // initialRoute: '/login',
       routes: {
         '/login': (context) => login(),
-        '/home': (context) => slider(),
+        '/home': (context) => mainpage(),
         '/signup': (context) => signup(),
         '/productpage': (context) => productPage(),
         '/parrotpage': (context) => parrotpage(),
+        '/shirtpage': (context) => shirtpage(),
       },
       home: mainpage(),
     );

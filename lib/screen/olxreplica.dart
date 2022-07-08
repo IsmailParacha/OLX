@@ -30,14 +30,20 @@ class _mainpageState extends State<mainpage> {
           activeColor: Colors.white,
           color: Colors.grey,
           items: [
-            TabItem(icon: Icons.home, title: 'HOME'),
+            TabItem(
+              icon: Icons.home,
+              title: 'HOME',
+            ),
             TabItem(icon: Icons.chat, title: 'CHATS'),
             TabItem(icon: Icons.add, title: 'SELL'),
             TabItem(icon: Icons.favorite_outline, title: 'MY ADS'),
             TabItem(icon: Icons.person, title: 'ACCOUNT'),
           ],
           initialActiveIndex: 2, //optional, default as 0
-          onTap: (int i) => print('Bottom navigation  index=$i'),
+          onTap: (int i) => {
+            print('Bottom navigation  index=$i'),
+            if (i == 4) {Navigator.pushNamed(context, '/login')}
+          },
         ),
         appBar: AppBar(
           title: Row(
