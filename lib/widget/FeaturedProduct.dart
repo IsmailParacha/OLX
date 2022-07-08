@@ -45,13 +45,10 @@ class featuredproduct extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Expanded(
-                              child: Text(
-                                '$name',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16.0),
-                              ),
+                            Text(
+                              '$name',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 16.0),
                             ),
                             Icon(Icons.favorite_outline)
                           ],

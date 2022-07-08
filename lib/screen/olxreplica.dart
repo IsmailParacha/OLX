@@ -203,21 +203,29 @@ class _mainpageState extends State<mainpage> {
                 Expanded(
                     child: featuredproduct("assets/image/house.jpg",
                         "Portion for Rent", "15,000")),
-                Expanded(child: simpleProduct()),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: simpleProduct()),
-                Expanded(child: simpleProduct()),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: simpleProduct()),
                 Expanded(
-                    child: featuredproduct(
-                        "assets/image/pet.jpg", "Commercial space", "5,00000")),
+                    child: simpleProduct(
+                        "assets/image/chair.jpg", "XR for sale", "40,000")),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                    child: simpleProduct(
+                        "assets/image/cloth.jpg", "Cloth for men", "2,000")),
+                Expanded(
+                    child: simpleProduct(
+                        "assets/image/shoes.jpg", "Shoes for men", "4,000")),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                    child: simpleProduct(
+                        "assets/image/chair.jpg", "Pair Of chair", "10,000")),
+                Expanded(
+                    child: featuredproduct("assets/image/commercail.jpg",
+                        "Commercial space", "5,00000")),
               ],
             )
           ],

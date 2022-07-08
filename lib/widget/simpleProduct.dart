@@ -3,7 +3,15 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class simpleProduct extends StatelessWidget {
-  const simpleProduct({Key? key}) : super(key: key);
+  final String imagename;
+  final String name;
+  final String price;
+  // final Color color;
+  simpleProduct(
+    this.imagename,
+    this.name,
+    this.price,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +25,7 @@ class simpleProduct extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.asset(
-                "assets/image/3.jpg",
+                "$imagename",
                 fit: BoxFit.fill,
               ),
 
@@ -30,7 +38,7 @@ class simpleProduct extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Flat for Sell",
+                            "$name",
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 16.0),
                           ),
@@ -38,41 +46,41 @@ class simpleProduct extends StatelessWidget {
                         ],
                       ),
                       Text(
-                        "RS 50,000",
+                        "RS $price",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 18.0),
                       ),
 
                       //House properties
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          //BATHROOM DETAIL
-                          Container(
-                            child: Row(
-                              children: [
-                                Icon(Icons.bathroom_outlined),
-                                Text(" 3")
-                              ],
-                            ),
-                          ),
-                          //ROM DETAIL
-                          Container(
-                            child: Row(
-                              children: [Icon(Icons.bed_outlined), Text(" 4")],
-                            ),
-                          ),
-                          //HOUSE SPACE DETAIL
-                          Container(
-                            child: Row(
-                              children: [
-                                Icon(Icons.square_foot_outlined),
-                                Text("240yard")
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
+                      // Row(
+                      //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      //   children: [
+                      //     //BATHROOM DETAIL
+                      //     Container(
+                      //       child: Row(
+                      //         children: [
+                      //           Icon(Icons.bathroom_outlined),
+                      //           Text(" 3")
+                      //         ],
+                      //       ),
+                      //     ),
+                      //     //ROM DETAIL
+                      //     Container(
+                      //       child: Row(
+                      //         children: [Icon(Icons.bed_outlined), Text(" 4")],
+                      //       ),
+                      //     ),
+                      //     //HOUSE SPACE DETAIL
+                      //     Container(
+                      //       child: Row(
+                      //         children: [
+                      //           Icon(Icons.square_foot_outlined),
+                      //           Text("240yard")
+                      //         ],
+                      //       ),
+                      //     ),
+                      //   ],
+                      // ),
 
                       Text(" SCHEME 33, KARACHI"),
                     ]),
