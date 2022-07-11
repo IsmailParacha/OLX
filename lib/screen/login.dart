@@ -184,7 +184,7 @@ class _loginState extends State<login> {
                         child: Icon(
                           Icons.mail_outline,
                           color: Colors.white,
-                          size: 34.0,
+                          size: 35.0,
                         ),
                       ),
                       Text("Gmail",
