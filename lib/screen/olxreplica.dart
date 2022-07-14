@@ -124,7 +124,7 @@ class _mainpageState extends State<mainpage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Browse Catagories",
+                    "Browse Catagorie",
                     style: TextStyle(
                         fontSize: 17.0,
                         color: Color.fromARGB(255, 124, 146, 149)),
