@@ -48,41 +48,50 @@ Widget ALL() {
           children: [
             Container(
               width: 40,
-              height: 27,
+              height: 35,
               decoration: BoxDecoration(
                   border: Border.all(width: 1.0),
                   borderRadius: BorderRadius.circular(12.0)),
-              child: Text(
-                "All",
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 14.0),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "All",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 14.0),
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 10.0, right: 10.0),
               child: Container(
                 width: 100,
-                height: 27,
+                height: 35,
                 decoration: BoxDecoration(
                     border: Border.all(width: 1.0),
                     borderRadius: BorderRadius.circular(12.0)),
-                child: Text(
-                  "Unread Chats",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 14.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "Unread Chats",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 14.0),
+                  ),
                 ),
               ),
             ),
             Container(
               width: 90,
-              height: 27,
+              height: 35,
               decoration: BoxDecoration(
                   border: Border.all(width: 1.0),
                   borderRadius: BorderRadius.circular(12.0)),
-              child: Text(
-                "Important",
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 14.0),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Important",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 14.0),
+                ),
               ),
             ),
           ],
@@ -107,41 +116,50 @@ Widget buying() {
           children: [
             Container(
               width: 40,
-              height: 27,
+              height: 35,
               decoration: BoxDecoration(
                   border: Border.all(width: 1.0),
                   borderRadius: BorderRadius.circular(12.0)),
-              child: Text(
-                "All",
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 14.0),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "All",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 14.0),
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 10.0, right: 10.0),
               child: Container(
                 width: 100,
-                height: 27,
+                height: 35,
                 decoration: BoxDecoration(
                     border: Border.all(width: 1.0),
                     borderRadius: BorderRadius.circular(12.0)),
-                child: Text(
-                  "Unread Chats",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 14.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "Unread Chats",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 14.0),
+                  ),
                 ),
               ),
             ),
             Container(
               width: 90,
-              height: 27,
+              height: 35,
               decoration: BoxDecoration(
                   border: Border.all(width: 1.0),
                   borderRadius: BorderRadius.circular(12.0)),
-              child: Text(
-                "Important",
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 14.0),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Important",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 14.0),
+                ),
               ),
             ),
           ],
