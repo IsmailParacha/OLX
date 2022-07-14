@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medicalapp/screen/chatscreen.dart';
 import 'package:medicalapp/screen/login.dart';
 import 'package:medicalapp/screen/olxreplica.dart';
 import 'package:medicalapp/screen/parrotproduct.dart';
@@ -29,7 +30,7 @@ class home extends StatelessWidget {
         '/parrotpage': (context) => parrotpage(),
         '/shirtpage': (context) => shirtpage(),
       },
-      home: mainpage(),
+      home: chatscreen(),
     );
   }
 }
