@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -44,6 +42,52 @@ class _chatscreenState extends State<chatscreen> {
 Widget ALL() {
   return ListView(
     children: [
+      Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Row(
+          children: [
+            Container(
+              width: 40,
+              height: 27,
+              decoration: BoxDecoration(
+                  border: Border.all(width: 1.0),
+                  borderRadius: BorderRadius.circular(12.0)),
+              child: Text(
+                "All",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 14.0),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+              child: Container(
+                width: 100,
+                height: 27,
+                decoration: BoxDecoration(
+                    border: Border.all(width: 1.0),
+                    borderRadius: BorderRadius.circular(12.0)),
+                child: Text(
+                  "Unread Chats",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 14.0),
+                ),
+              ),
+            ),
+            Container(
+              width: 90,
+              height: 27,
+              decoration: BoxDecoration(
+                  border: Border.all(width: 1.0),
+                  borderRadius: BorderRadius.circular(12.0)),
+              child: Text(
+                "Important",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 14.0),
+              ),
+            ),
+          ],
+        ),
+      ),
       message(),
       message(),
       message(),
@@ -57,6 +101,52 @@ Widget ALL() {
 Widget buying() {
   return ListView(
     children: [
+      Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Row(
+          children: [
+            Container(
+              width: 40,
+              height: 27,
+              decoration: BoxDecoration(
+                  border: Border.all(width: 1.0),
+                  borderRadius: BorderRadius.circular(12.0)),
+              child: Text(
+                "All",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 14.0),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+              child: Container(
+                width: 100,
+                height: 27,
+                decoration: BoxDecoration(
+                    border: Border.all(width: 1.0),
+                    borderRadius: BorderRadius.circular(12.0)),
+                child: Text(
+                  "Unread Chats",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 14.0),
+                ),
+              ),
+            ),
+            Container(
+              width: 90,
+              height: 27,
+              decoration: BoxDecoration(
+                  border: Border.all(width: 1.0),
+                  borderRadius: BorderRadius.circular(12.0)),
+              child: Text(
+                "Important",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 14.0),
+              ),
+            ),
+          ],
+        ),
+      ),
       message(),
       message(),
       message(),
@@ -66,7 +156,7 @@ Widget buying() {
 
 Widget selling() {
   return Padding(
-    padding: const EdgeInsets.only(top: 280.0),
+    padding: const EdgeInsets.only(top: 180.0),
     child: ListView(
       children: [
         Column(
