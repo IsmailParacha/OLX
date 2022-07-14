@@ -42,7 +42,8 @@ class _mainpageState extends State<mainpage> {
           initialActiveIndex: 2, //optional, default as 0
           onTap: (int i) => {
             print('Bottom navigation  index=$i'),
-            if (i == 4) {Navigator.pushNamed(context, '/login')}
+            if (i == 4) {Navigator.pushNamed(context, '/login')},
+            if (i == 1) {Navigator.pushNamed(context, '/chatscreen')}
           },
         ),
         appBar: AppBar(

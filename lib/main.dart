@@ -29,8 +29,9 @@ class home extends StatelessWidget {
         '/productpage': (context) => productPage(),
         '/parrotpage': (context) => parrotpage(),
         '/shirtpage': (context) => shirtpage(),
+        '/chatscreen': (context) => chatscreen()
       },
-      home: chatscreen(),
+      home: mainpage(),
     );
   }
 }
